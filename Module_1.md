@@ -15,7 +15,56 @@
 
 ## Introduction to React and its Significance
 
-**Component-Based Architecture:** React utilizes a component-based architecture, where UIs are constructed from reusable components. This modular approach simplifies development, testing, and maintenance of large-scale applications.
+**Component-Based Architecture:** React utilizes a component-based architecture, where UIs are constructed from **reusable components**. This modular approach simplifies development, testing, and maintenance of large-scale applications.
+
+I will provied you some code example so that you can unserstand what **resuable components** is all about.
+1. Creating a Button Component
+In our example, we're going to create a simple button component. We define a React functional component named Button. This component represents a button element that users can interact with.
+```
+// Example of a React component
+// child component
+
+import React from 'react';
+// Define a functional component named 'Button'
+const Button = ({ onClick, label }) => {
+  return (
+    <button onClick={onClick}>
+      {label}
+    </button>
+  );
+};
+```
+2. **Understanding Props**:
+Props (short for properties) allow us to pass data from one component to another. In the Button component, we define two props: onClick and label.
+onClick: This prop is a function that will be called when the button is clicked. It allows us to define custom behavior for the button.
+label: This prop is the text that will be displayed on the button. It determines what text appears inside the button.
+3. **Using the Button Component**:
+Now, let's use our Button component in another component called App. Inside the App component, we'll render the Button component and provide values for its props.
+
+```
+// Define a functional component named 'App' which uses the 'Button' component
+// parent component
+
+const App = () => {
+  // Event handler function
+  const handleClick = () => {
+    console.log('Button clicked!');
+  };
+
+  return (
+    <div>
+      <h1>Component-Based Architecture Example</h1>
+      <Button onClick={handleClick} label="Click Me" />
+    </div>
+  );
+};
+
+export default App;
+```
+4. **Handling Events**:
+Inside the App component, we define an event handler function named handleClick. This function will be called when the button is clicked. In our example, it simply logs a message to the console.
+5. **Exporting the App Component**:
+Finally, we export the App component as the default export. This makes it available for use in other parts of our application
 
 **Declarative Syntax:** React employs a declarative syntax with JSX (JavaScript XML), enabling developers to write HTML-like code directly within JavaScript. This enhances code readability and understanding.
 
@@ -31,4 +80,4 @@
 * **Mobile Development:** React Native facilitates building cross-platform mobile applications using JavaScript and React. 
 * **Community and Support:** A large and active community provides resources, tutorials, and support.
 * **Scalability and Maintainability:** Component-based architecture promotes code reusability and maintainability.
-* **Accessibility and SEO:** React supports best practices for accessibility and search engine optimization. 
+* **Accessibility and SEO:** React supports best practices for accessibility and search engine optimization.
