@@ -36,7 +36,7 @@ const Button = ({ onClick, label }) => {
 };
 ```
 2. **Understanding Props**:
-Props (short for properties) allow us to pass data from one component to another. In the Button component, we define two props: onClick and label.
+Props (short for properties) allow us to pass data from one component to another. In the Button component, we define two props: onClick and label..
 onClick: This prop is a function that will be called when the button is clicked. It allows us to define custom behavior for the button.
 label: This prop is the text that will be displayed on the button. It determines what text appears inside the button.
 3. **Using the Button Component**:
