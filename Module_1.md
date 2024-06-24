@@ -16,8 +16,8 @@
 ## Introduction to React and its Significance
 
 ### Component-Based Architecture
- React utilizes a component-based architecture, where UIs are constructed from **reusablecomponents**. This modular approach simplifies the development, testing, and maintenance of large-scale applications.
- 
+ React utilizes a component-based architecture, where UIs are constructed from **reusablecomponents**. This modular approach simplifies the development, testing, and maintenance of large-scale applications..
+
 I will provide you with some code examples so that you can understand what **reusable components** are all about.
 1. Creating a Button Component
 In our example, we're going to create a simple button component. We define a React functional component named Button. This component represents a button element that users can interact with.
